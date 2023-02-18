@@ -7,13 +7,7 @@ inp = input("Input six digit ticket number: ")
 
 if inp.isdigit():
     if len(inp) == 6:
-        fir = int(inp[0])
-        sec = int(inp[1])
-        thi = int(inp[2])
-        fou = int(inp[3])
-        fiv = int(inp[4])
-        six = int(inp[5])
-        if fir + sec + thi == fou + fiv + six:
+        if int(inp[0]) + int(inp[1]) + int(inp[2]) == int(inp[3]) + int(inp[4]) + int(inp[5]):
             print("`Tis a lucky ticket!")
         else:
             print("A regular ticket number")
